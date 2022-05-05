@@ -1,7 +1,7 @@
 export const ToDoList = document.getElementById('to-do-list');
 
 const createTodoItem = (obj) => {
-  const tdoItem = document.createElement('div');
+  const tdoItem = document.createElement('li');
   tdoItem.className = `tdo-item ${obj.completed ? 'completed' : ''}`;
   tdoItem.id = `${obj.index}`;
   tdoItem.innerHTML = ` <span class="before"></span>
